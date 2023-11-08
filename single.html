@@ -40,16 +40,19 @@
 	<link rel="stylesheet" href="css/filter.css">
 	<link rel="stylesheet" href="css/style.css">
 
-
+	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- Modernizr JS -->
 	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 		<script src="js/respond.min.js"></script>
 		<![endif]-->
+	
+	
 
-	<!-- Stylesheets imported from "riddle"-->
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+	
 	<!-- 	
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
@@ -81,7 +84,17 @@
 			</div>
 		</nav>
 
-
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var hamburger = document.getElementById('hamburger-menu');
+				var navUL = document.querySelector('.fh5co-nav ul');
+	
+				hamburger.addEventListener('click', function () {
+					navUL.style.display = navUL.style.display === 'block' ? 'none' : 'block';
+				}, false);
+			});
+		</script>
+	
 		<!-- portfolio section start -->
 
 
@@ -515,9 +528,16 @@
 	<script src="js/sticky-kit.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	
+
+	<!-- partial -->
+
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
+	<script src='https://kit.fontawesome.com/177aa6247e.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
 	<script src="js/filter.js"></script>
-
-
 </body>
 
 </html>
