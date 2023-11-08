@@ -21,7 +21,7 @@
     });
   });
 
-  $(".project")
+  $(".gallery-item")
     .mouseenter(function () {
       $(this)
         .find(".project-overlay")
