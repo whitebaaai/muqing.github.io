@@ -68,17 +68,8 @@
 			</div>
 		</nav>
 	</header>
-	
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				var hamburger = document.getElementById('hamburger-menu');
-				var navUL = document.querySelector('.fh5co-nav ul');
 
-				hamburger.addEventListener('click', function () {
-					navUL.style.display = navUL.style.display === 'block' ? 'none' : 'block';
-				}, false);
-			});
-		</script>
+
 
 		<!-- portfolio section start -->
 
@@ -499,17 +490,48 @@
 	</div>
 
 <!-- jQuery and JS bundle w/ Popper.js -->
+
+<!-- jQuery library -->
 <script src="js/jquery.min.js"></script>
+
+<!-- jQuery plugins -->
 <script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/sticky-kit.min.js"></script>
-<script src="js/main.js"></script>
-<script src='https://kit.fontawesome.com/177aa6247e.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js'></script>
+
+<!-- Popper.js for Bootstrap -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Magnific Popup plugin - make sure to include this before main.js -->
+<script src="js\magnific-popup.min.js"></script>
+
+<!-- Font Awesome, independent, can be loaded anywhere -->
+<script src='https://kit.fontawesome.com/177aa6247e.js'></script>
+
+<!-- Isotope, jQuery plugin -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js'></script>
+
+<!-- Your custom script -->
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		var hamburger = document.getElementById('hamburger-menu');
+		var navUL = document.querySelector('.fh5co-nav ul');
+
+		hamburger.addEventListener('click', function () {
+			navUL.style.display = navUL.style.display === 'block' ? 'none' : 'block';
+		}, false);
+	});
+</script>
+
+<!-- Other custom scripts -->
 <script src="js/filter.js"></script>
+<script src="js/main.js"></script>
+
+
 </body>
 
 </html>
