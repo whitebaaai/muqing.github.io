@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'Montserrat';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
@@ -11,15 +11,19 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #767676;
+  color: #000000;
   background: rgb(255, 255, 255);
-  /* START white border*/
-  border-left: 20px solid #fff;
-  border-right: 20px solid #fff;
-  /* END white border*/
+  border-left: 20px solid #fff; /* START white border*/
+  border-right: 20px solid #ffffff; /* END white border*/
+}
+@media screen and (max-width: 768px) {
+  body {
+    border-left: none;
+    border-right: none;
+  }
 }
 
-body:before,
+/* body:before,
 body:after {
   content: "";
   position: fixed;
@@ -50,7 +54,7 @@ body:after {
     border-left: none;
     border-right: none;
   }
-}
+} */
 
 #page {
   position: relative;
@@ -61,7 +65,6 @@ body:after {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -82,16 +85,14 @@ body:after {
 }
 
 a {
-  color: #F95959;
+  color: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
-a:hover,
-a:active,
-a:focus {
-  color: #F95959;
+a:hover, a:active, a:focus {
+  color: rgb(55, 156, 0);
   outline: none;
   text-decoration: none;
 }
@@ -100,13 +101,7 @@ p {
   margin-bottom: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-figure {
+h1,h2,h3,h4,h5,h6,figure {
   color: #000;
   font-family: "Montserrat";
   font-weight: 400;
@@ -125,14 +120,13 @@ figure {
 
 ::selection {
   color: #fff;
-  background: #aa0b0b;
+  background: #ffffff;
 }
 
 .container-wrap {
   width: 1300px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 768px) {
   .container-wrap {
     width: 100%;
@@ -143,24 +137,21 @@ figure {
 .fh5co-nav {
   margin: 4em 0 2em 0;
 }
-
 @media screen and (max-width: 768px) {
   .fh5co-nav {
-    margin: 2em 0;
+    margin: 2em 0 2em 0;
   }
 }
 
 .fh5co-nav .top-menu {
-  /* padding: 0; */
-  /* position: fixed; */
-  position: center;
+  padding: 0;
   top: 2%;
   left: auto;
   right: auto;
   transform: translateX(0%);
   width: 100%;
   z-index: 1000;
-  /* border: rgb(0, 219, 58) 4px solid; */
+  /* border: #F95959 4px solid; */
 }
 
 .fh5co-nav #fh5co-logo {
@@ -173,11 +164,9 @@ figure {
   display: inline-block;
   padding: 10px 10px;
 }
-
 @media screen and (max-width: 768px) {
   .fh5co-nav #fh5co-logo {
-    font-size: 40px;
-    /* Adjust font size for mobile */
+    font-size: 40px; /* Adjust font size for mobile */
   }
 }
 
@@ -211,7 +200,6 @@ figure {
   position: relative;
   background-color: rgba(255, 255, 255, 0.6);
 }
-
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
     display: none;
@@ -223,7 +211,7 @@ figure {
   margin: 0em 0 0 0;
   display: inline-block;
   text-align: right;
-  /* border: rgb(179, 0, 219) 4px solid; */
+  /* border: rgba(234, 16, 16, 0.6) 4px solid; */
 }
 
 .fh5co-nav ul li {
@@ -234,11 +222,9 @@ figure {
   display: inline;
   font-size: 30px;
 }
-
 @media screen and (max-width: 768px) {
   .fh5co-nav ul li {
-    font-size: 20px;
-    /* Adjust font size for mobile */
+    font-size: 20px; /* Adjust font size for mobile */
   }
 }
 
@@ -250,26 +236,21 @@ figure {
   transition: 0.5s;
   color: #000000;
   background-color: rgba(255, 255, 255, 0.6);
-  display: inline-block;
-  /* Ensures the background color covers the entire element */
-  padding: 2px 5px;
-  /* Add padding to create space around the text */
+  display: inline-block; /* Ensures the background color covers the entire element */
+  padding: 2px 5px; /* Add padding to create space around the text */
 }
 
 .fh5co-nav ul li a:hover {
-  color: rgb(0, 0, 0);
-  /* Change text color on hover */
-  background-color: rgba(255, 255, 255, 0.6);
-  /* Change background color on hover */
+  color: rgb(213, 213, 213); /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.6); /* Change background color on hover */
 }
-
 
 .fh5co-nav ul li.btn-cta a {
   padding: 30px 0px !important;
   color: #fff;
 }
 
-.fh5co-nav ul li.btn-cta a span {
+/* .fh5co-nav ul li.btn-cta a span {
   background: #f95959;
   padding: 4px 10px;
   display: -moz-inline-stack;
@@ -289,10 +270,10 @@ figure {
   -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-}
+} */
 
 .fh5co-nav ul li.active>a {
-  color: #e52309 !important;
+  color: #000000 !important;
   position: relative;
 }
 
@@ -309,16 +290,15 @@ figure {
   position: relative;
 }
 
-.fh5co-video {
+/* .fh5co-video {
   overflow: hidden;
 }
-
 @media screen and (max-width: 992px) {
   .fh5co-video {
-    height: 450px;
+    height: auto; remove height for responsiveness
+    padding-bottom: 56.25%; 16:9 aspect ratio for responsive video
   }
 }
-
 .fh5co-video a {
   z-index: 1001;
   position: absolute;
@@ -371,7 +351,7 @@ figure {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
-}
+} */
 
 #fh5co-hero {
   min-height: 800px;
@@ -380,10 +360,10 @@ figure {
   float: left;
   margin-bottom: 20px;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-hero {
     min-height: 500px;
+    background-size: cover; /* Ensure the background covers the entire container */
   }
 }
 
@@ -405,6 +385,11 @@ figure {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .slides li {
+    min-height: 500px;
+  }
+}
 
 #fh5co-hero .flexslider .slides li {
   background-repeat: no-repeat;
@@ -413,7 +398,6 @@ figure {
   min-height: 800px;
   position: relative;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slides li {
     min-height: 500px;
@@ -426,6 +410,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -468,7 +453,6 @@ figure {
   z-index: 9;
   position: relative;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text {
     min-height: 500px;
@@ -481,7 +465,6 @@ figure {
   left: 0;
   padding: 0 2em 3em 0;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text>.slider-text-inner {
     text-align: left;
@@ -513,7 +496,6 @@ figure {
 #fh5co-hero .flexslider .slider-text>.slider-text-inner h1 a {
   color: #fff;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text>.slider-text-inner h1 {
     font-size: 24px;
@@ -540,9 +522,7 @@ figure {
   padding: 6em 0;
   clear: both;
 }
-
 @media screen and (max-width: 768px) {
-
   #fh5co-contact,
   #fh5co-work,
   #fh5co-footer {
@@ -560,7 +540,7 @@ figure {
 }
 
 #fh5co-intro h2 span {
-  font-family: "Open Sans", arial, sans-serif !important;
+  font-family: "Montserrat" !important;
   font-size: 16px;
 }
 
@@ -608,10 +588,8 @@ figure {
 
 /* Initial styling for the image */
 .image-container img {
-  filter: grayscale(100%);
-  /* Convert the image to black and white */
-  transition: filter 0.3s;
-  /* Add a smooth transition effect */
+  filter: grayscale(100%); /* Convert the image to black and white */
+  transition: filter 0.3s; /* Add a smooth transition effect */
 }
 
 .portfolio-grid .desc {
@@ -627,7 +605,6 @@ figure {
   -webkit-transform: translate3d(0, 20px, 0);
   transform: translate3d(0, 20px, 0);
 }
-
 @media screen and (max-width: 768px) {
   .portfolio-grid .desc {
     opacity: 1;
@@ -741,7 +718,7 @@ input[type="text"] {
 }
 
 .form-group .btn-modify {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat";
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -791,7 +768,7 @@ input[type="text"] {
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat";
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #000;
@@ -919,7 +896,7 @@ input[type="text"] {
 #fh5co-offcanvas ul li.offcanvas-has-dropdown>a:after {
   position: absolute;
   right: 0px;
-  font-family: 'icomoon';
+  font-family: 'Montserrat';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1110,7 +1087,7 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 1px;
@@ -1616,3 +1593,18 @@ input[type="text"] {
 
 
 /* single project page */
+.gallery-row {
+  display: flex;
+  flex-basis: calc(33.33% - 10px);
+  /* Adjust the width of each column and consider the gap */
+  flex-grow: 1;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+}
+/* Remove the margin-right from the last item in each row to prevent excess space */
+.gallery-row .gallery-item:last-child {
+  margin-right: 0;
+}
