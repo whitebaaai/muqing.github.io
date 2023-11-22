@@ -4049,10 +4049,10 @@ img .work-img {
   }
 
   /* ipad iphone  */
-  /* .left-column,
+  .left-column,
   .right-column {
     width: 100%;
-  } */
+  }
 }
 
 /* project_page_triple: Style the container for left and right columns */
