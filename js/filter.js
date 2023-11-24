@@ -12,16 +12,17 @@
     e.preventDefault();
 
     var filter = $(this).attr("data-filter");
-
-    $("ul.filters > li").removeClass("active");
-    $(this).addClass("active");
-
-    $projects.isotope({
-      filter: filter
-    });
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $projects.isotope({ filter: '*' });
+    } else {
+      $("ul.filters > li").removeClass("active");
+      $(this).addClass("active");
+      $projects.isotope({ filter: filter });
+    }
   });
 
-  $(".project")
+  $(".project-head")
     .mouseenter(function () {
       $(this)
         .find(".project-overlay")
