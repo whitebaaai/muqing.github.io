@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-
+  
   var $projects = $(".projects");
 
   $projects.isotope({
@@ -48,3 +48,4 @@
         });
     });
 })(jQuery);
+
