@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @font-face {
   font-family: icomoon;
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -30,7 +31,7 @@
   height: auto;
   display: block
 }
-.two-column-layout {
+/* .two-column-layout {
   display: flex;
   justify-content: space-between;
   gap: 20px
@@ -52,7 +53,7 @@
   .right-column {
     width: 100%
   }
-}
+} */
 
 
 

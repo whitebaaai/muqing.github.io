@@ -763,13 +763,13 @@ h6 {
 }
 
 .left-column {
-  width: 50%;
+  width: 30%;
   padding: 20px
 }
 .right-column {
-  width: 50%;
+  width: 70%;
   margin: 10px 20 10px auto;
-  padding: 20%;
+  /* padding: 20%; */
 }
 .right-column img {
   width: 100%;
@@ -785,6 +785,8 @@ h6 {
   }
 }
 
+
+
 .google-slides-container {
   position: relative;
   width: 100%;
@@ -799,5 +801,33 @@ h6 {
   width: 100%;
   height: 100%;
 }
+
+
+.two-column-layout2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px
+}
+.left-column2 {
+  width: 50%;
+  padding: 20px
+}
+.right-column2 {
+  width: 50%;
+  margin: 10px 20 10px auto;
+  padding: 20px
+}
+@media (max-width:768px) {
+  .two-column-layout2 {
+    flex-direction: column
+  }
+  .left-column2,
+  .right-column2 {
+    width: 100%
+  }
+}
+
+
+
 
 
