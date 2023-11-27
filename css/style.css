@@ -316,7 +316,13 @@ h6 {
 }
 
 .portfolio-grid .desc span {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  .portfolio-grid .desc span{
+    opacity: 1;
+    font-size: 65%;
+  }
 }
 
 .portfolio-grid:hover:after {
