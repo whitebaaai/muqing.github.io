@@ -126,10 +126,10 @@ h6 {
 
 .fh5co-nav .top-menu {
   padding: 0;
-  top: 2%;
+  top: 0%;
   left: auto;
   right: auto;
-  transform: translateX(0%);
+  /* transform: translateX(0%); */
   width: 100%;
   z-index: 1000;
   /* border: #F95959 4px solid; */
@@ -148,7 +148,7 @@ h6 {
 
 @media screen and (max-width: 768px) {
   .fh5co-nav #fh5co-logo {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -185,9 +185,29 @@ h6 {
 
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
-    display: none;
+    /* display: none; */
+    font-size: 20px;
   }
 }
+
+.menu-1 {
+  display: flex;
+  justify-content: space-between; /* Positions children on opposite ends */
+  align-items: center;
+  width: 100%; /* Ensures full width */
+}
+
+.menu-1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.menu-1 ul li {
+  margin-left: 20px; /* Spacing between menu items */
+}
+
 
 .fh5co-nav ul {
   padding: 0;
@@ -195,6 +215,12 @@ h6 {
   display: inline-block;
   text-align: right;
   /* border: rgba(234, 16, 16, 0.6) 4px solid; */
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-nav ul {
+    font-size: 10px;
+  }
 }
 
 .fh5co-nav ul li {
