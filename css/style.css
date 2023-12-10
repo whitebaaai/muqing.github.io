@@ -859,6 +859,44 @@ h6 {
   }
 }
 
+/* Display Button for Slideshows on p_dep_dom.html  */
+
+.mySlides {
+  display: none; /* Hide all images by default */
+}
+
+.display-container {
+  position: relative;
+}
+
+.w3-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+  background-color: transparent; /* Minimalist buttons often have no background or a very subtle one */
+  border: none; /* No border for a cleaner look */
+  color: rgb(255, 255, 255); /* Simple color, can be changed based on the background */
+  font-size: 20px; /* Simple and readable font size */
+  padding: 8px 16px; /* Adequate spacing but not too much */
+  text-align: center;
+  text-decoration: none; /* No underline or overline */
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.w3-button:hover {
+  color: rgb(219, 219, 219); /* Slight change on hover for user feedback */
+}
+
+.w3-button.w3-display-left {
+  left: 0;
+}
+
+.w3-button.w3-display-right {
+  right: 0;
+}
+
 
 
 

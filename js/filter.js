@@ -3,9 +3,11 @@
   
   var $projects = $(".projects");
 
-  $projects.isotope({
-    itemSelector: ".item",
-    layoutMode: "fitRows"
+  $projects.imagesLoaded(function() {
+    $projects.isotope({
+      itemSelector: ".item",
+      layoutMode: "fitRows"
+    });
   });
 
   $("ul.filters > li").on("click", function (e) {
