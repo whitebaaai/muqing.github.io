@@ -32,4 +32,9 @@
 .icon-github:before {
   content: "\eae0";
 }
-
+.icon-instagram:before {
+  content: "\eac2";
+}
+.icon-mail:before {
+  content: "\e066";
+}
